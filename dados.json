@@ -1,13 +1,19 @@
 [
     {
-        "id": 1,
-        "titulo": "Gamedeve",
-        "desc": "lorem input",
+        "id": 0,
+        "titulo": "Ciência da Computação",
+        "desc": "Ciência da Computação é um curso que explora os fundamentos teóricos e práticos da computação, incluindo algoritmos, estruturas de dados, programação, inteligência artificial, computação gráfica, entre outros. Os graduados em Ciência da Computação estão preparados para uma ampla variedade de carreiras técnicas e de pesquisa.        ",
         "video": "url_safada"
     },
     {
-        "id": 2,
+        "id": 1,
         "titulo": "cientista de dados",
+        "desc": "lorem input",
+        "video": "url_safada" 
+    },
+    {
+        "id": 2,
+        "titulo": "cientista de virus",
         "desc": "lorem input",
         "video": "url_safada" 
     }

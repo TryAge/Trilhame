@@ -10,36 +10,39 @@
     <title>Exibindo Dados JSON em HTML</title>
 </head>
 <body onload="carregarDados()">
+
     <div id="dados">
-        
+        <!---Aqui vai aparecer os dados-->
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script>
+        fetch('indentificador.json')
+            .then(response => response.json())
+            .then(data => {
+        // Atribuir os valores do JSON às variáveis globais
+            i = data.id;
+      })
+
         // Função para carregar e exibir dados do JSON
-        function carregarDados() {
-            // Faz uma requisição HTTP para carregar o arquivo JSON
-            var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    // Parse do JSON para um objeto JavaScript
-                    var dados = JSON.parse(xhr.responseText);
+        
 
-                    var i = 0;
-                    
-                    // Monta o HTML para exibir os dados
-                    var html = "";
-                        html += "<h1>" + dados[i].titulo + "</h1>" +
-                                "<p>Descrição: " + dados[i].desc + "</p>" +
-                                "<p>Vídeo: " + dados[i].video + "</p><br>";
-                    
-
-                    // Insere o HTML na div com id "dados"
-                    document.getElementById("dados").innerHTML = html;
-                }
-            };
-            xhr.open("GET", "dados.json", true);
-            xhr.send();
-        }
     </script>
 </body>
 </html>
