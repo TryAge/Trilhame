@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Bem-vindo!</title>
+    <script src="/teste.js"></script>
 </head>
 <body>
     <main>
@@ -30,18 +31,39 @@
             Sobre a gente
         </article>
         <article>
-            Aqui vai aparecer vária divs das profissões
-            <div> <!--Ache que nessa parte seria bom mesmo ter um banco de dados, pra gnt não fazer um processo repetitivo-->
-                Cientista de dados <!--Pra gente não ter que botar div por div-->
-            </div>
-            <div>
-                Gamedev
-            </div>
+            <ul>
+                <li onclick="identificador(0)">gamedeve</li>
+            </ul>
         </article>
 >>>>>>> Stashed changes
     </main>
     <footer>
+        <form action="../forms.php" method="post">
 
+            <label for="email">Caso queira se identificar: </label><br>
+        
+            <input placeholder="Ponha seu email aqui" type="email" name="email" id="email" required>
+            
+            <div class="rating">
+              <input type="radio" name="star" id="star1"><label for="star1"></label>
+              <input type="radio" name="star" id="star2"><label for="star2"></label>
+              <input type="radio" name="star" id="star3"><label for="star3"></label>
+              <input type="radio" name="star" id="star4"><label for="star4"></label>
+              <input type="radio" name="star" id="star5"><label for="star5"></label>
+            </div>
+        
+            <input name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua observação aquui!" required></input>
+        
+            <button type="submit">Enviar</button>
+        
+            </form>
     </footer>
+
+    <script>
+        function identificador(number=0){
+            
+
+        }
+    </script>
 </body>
 </html>
