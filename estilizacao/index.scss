@@ -4,3 +4,24 @@
     box-sizing: border-box;
 }
 
+
+header{
+    background-color: rgb(56, 170, 155);
+
+    li {
+        display: inline;
+    }
+
+    li:hover {
+        color: aliceblue;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+    
+}
+
+footer{
+    background-color: rgb(202, 202, 202);
+}

@@ -3,36 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="estilizacao/index.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Bem-vindo!</title>
     
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="src/output.css">
 </head>
-<body onload="carregarDados()" onload="carregar_id(8)">
+<body onload="carregarDados()">
     <header>
         <nav>
             <ul>
                 <li><a href="#">Logo</a></li>
                 <li>
                     <ul>
-                        <li><a href="#">Relatos</a></li>
                         <li><a href="#">Área</a></li>
+                       <!-- <li><a href="#">Relatos</a></li> -->
                         <li><a href="#">Cursos</a></li>
                         <li><a href="#">Feedback</a></li>
                     </ul>
                 </li>
             </ul>
-            <h2>Trilhame</h2>
+            <h1>Trilhame</h1>
             <p>Um site informacional que busca sanar as suas dúvidas sobre as <em>trilhas</em>  na carreira de tecnologia</p>
         </nav>
     </header>
     <main>
+        <h1>Lista de Profissões</h1>
+    <ul id="listaProfissoes">
+        <!-- A lista de profissões será gerada aqui -->
+    </ul>
         <ul>
             <div id="dados"></div>
         </ul>
         
     </main>
+    
+
+    
+
     <footer>
         <form action="../forms.php" method="post">
 
@@ -55,11 +63,6 @@
         
             </form>
     </footer>
-
-    <h1>Lista de Profissões</h1>
-    <ul id="listaProfissoes">
-        <!-- A lista de profissões será gerada aqui -->
-    </ul>
 
     <script>
         // Carregar a lista de profissões do arquivo JSON

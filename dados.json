@@ -7,14 +7,14 @@
     },
     {
         "id": 1,
-        "titulo": "cientista de dados",
+        "titulo": " Engenharia da Computação",
         "desc": "lorem input",
-        "video": "url_safada" 
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/Frcck-cDbIo?si=FBkpCdbJHXiZv29S' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>" 
     },
     {
         "id": 2,
         "titulo": "cientista de virus",
         "desc": "lorem input",
-        "video": "url_safada" 
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/Frcck-cDbIo?si=FBkpCdbJHXiZv29S' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>" 
     }
 ]
