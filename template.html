@@ -3,7 +3,7 @@
 <!--PFVR NÃO MEXER NO SCRIPT-->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,28 +18,7 @@
     <footer>
 
     </footer>
-
-
-
-
-
-
 </body>
 
-<script>
-    // Obter o ID da profissão da URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = parseInt(urlParams.get('id'));
-
-    // Carregar os dados da profissão do arquivo JSON
-    fetch('dados.json')
-        .then(response => response.json())
-        .then(data => {
-            const profissao = data.find(item => item.id === id);
-            document.getElementById('titulo').innerText = profissao.titulo;
-            document.getElementById('descricao').innerText = profissao.desc;
-
-        })
-        .catch(error => console.error('Erro ao carregar os dados da profissão:', error));
-</script>
+<script src="scripts/profissoes.js"></script>
 </html>

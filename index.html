@@ -17,9 +17,9 @@
                 <li>
                     <ul>
                         <li><a href="#">Área</a></li>
-                       <!-- <li><a href="#">Relatos</a></li> -->
+                       <li><a href="#">Relatos</a></li>
                         <li><a href="#">Cursos</a></li>
-                        <li><a href="#">Feedback</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
                     </ul>
                 </li>
             </ul>
@@ -37,49 +37,14 @@
         </ul>
         
     </main>
-    
 
     
 
     <footer>
-        <form action="../forms.php" method="post">
-
-            <label for="email">Caso queira se identificar: </label><br>
         
-            <input placeholder="Ponha seu email aqui" type="email" name="email" id="email" required>
             
-            <div class="rating">
-              <input type="radio" name="star" id="star1"><label for="star1"></label>
-              <input type="radio" name="star" id="star2"><label for="star2"></label>
-              <input type="radio" name="star" id="star3"><label for="star3"></label>
-              <input type="radio" name="star" id="star4"><label for="star4"></label>
-              <input type="radio" name="star" id="star5"><label for="star5"></label>
-              
-            </div>
-        
-            <input name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua observação aquui!" required></input>
-        
-            <button type="submit">Enviar</button>
-        
-            </form>
     </footer>
 
-    <script>
-        // Carregar a lista de profissões do arquivo JSON
-        fetch('dados.json')
-            .then(response => response.json())
-            .then(data => {
-                const listaProfissoes = document.getElementById('listaProfissoes');
-                data.forEach(profissao => {
-                    const listItem = document.createElement('li');
-                    const link = document.createElement('a');
-                    link.href = `template.html?id=${profissao.id}`;
-                    link.textContent = profissao.titulo;
-                    listItem.appendChild(link);
-                    listaProfissoes.appendChild(listItem);
-                });
-            })
-            .catch(error => console.error('Erro ao carregar a lista de profissões:', error));
-    </script>
+    <script src="scripts/carregarlista.js"></script>
 </body>
 </html>

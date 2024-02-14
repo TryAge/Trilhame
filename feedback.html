@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <form action="../forms.php" method="post">
+
+        <label for="email">Caso queira se identificar: </label><br>
+    
+        <input placeholder="Ponha seu email aqui" type="email" name="email" id="email" required>
+        
+        <div class="rating">
+          <input type="radio" name="star" id="star1"><label for="star1"></label>
+          <input type="radio" name="star" id="star2"><label for="star2"></label>
+          <input type="radio" name="star" id="star3"><label for="star3"></label>
+          <input type="radio" name="star" id="star4"><label for="star4"></label>
+          <input type="radio" name="star" id="star5"><label for="star5"></label>
+          
+        </div>
+    
+        <input name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua observação aquui!" required></input>
+    
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
