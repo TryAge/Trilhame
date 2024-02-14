@@ -15,7 +15,6 @@
     </header>
     <h1 id="titulo">Título da Profissão</h1>
     <p id="descricao">Descrição da Profissão</p>
-    <div id="video"></div>
     <footer>
 
     </footer>
@@ -39,7 +38,6 @@
             const profissao = data.find(item => item.id === id);
             document.getElementById('titulo').innerText = profissao.titulo;
             document.getElementById('descricao').innerText = profissao.desc;
-            document.getElementById('video').innerHTML = profissao.video;
 
         })
         .catch(error => console.error('Erro ao carregar os dados da profissão:', error));

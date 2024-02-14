@@ -3,18 +3,15 @@
         "id": 0,
         "titulo": "Ciência da Computação",
         "desc": "Ciência da Computação é um curso que explora os fundamentos teóricos e práticos da computação, incluindo algoritmos, estruturas de dados, programação, inteligência artificial, computação gráfica, entre outros. Os graduados em Ciência da Computação estão preparados para uma ampla variedade de carreiras técnicas e de pesquisa.        ",
-        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/f_NCsBOkvTA?si=gBzB_PUSMXHE83Ki' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
     },
     {
         "id": 1,
         "titulo": " Engenharia da Computação",
-        "desc": "lorem input",
-        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/Frcck-cDbIo?si=FBkpCdbJHXiZv29S' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>" 
+        "desc": "lorem input"
     },
     {
         "id": 2,
         "titulo": "cientista de virus",
-        "desc": "lorem input",
-        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/Frcck-cDbIo?si=FBkpCdbJHXiZv29S' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>" 
+        "desc": "lorem input"
     }
 ]
