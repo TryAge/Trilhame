@@ -1,27 +1,48 @@
+$cor1: #FEFBF6;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
 
-
 header{
-    background-color: rgb(56, 170, 155);
+    height: 85vh;
+    background-image: url(https://profissoes.vagas.com.br/wp-content/uploads/2021/06/como-trabalhar-com-tecnologia-scaled-e1625137597564.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    div{
+        color: $cor1;
+        nav{
+            .logo{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 36px;
+                line-height: 80px;
+                padding: 0 80px;
+                font-weight: bold;
+            }
+            ul{
+                float: right;
+                margin-right: 80px;
+                li{
+                    display: inline-block;
+                    line-height: 80px;
+                    margin: 0 20px;
+                    a{
+                        border-width: 2px;
+                        border-color: $cor1;
+                        border-style: solid;
+                        padding: 10px 18px;
+                        border-radius: 15%;
 
-    li {
-        display: inline;
+                    }
+                }
+            }
+        }
     }
-
-    li:hover {
-        color: aliceblue;
-    }
-
-    h1 {
-        font-size: 50px;
-    }
-    
 }
 
-footer{
-    background-color: rgb(202, 202, 202);
+#navbar_item:hover{
+    background-color: #fefbf679;
 }
