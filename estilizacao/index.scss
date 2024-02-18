@@ -26,23 +26,43 @@ header{
                 float: right;
                 margin-right: 80px;
                 li{
+                    transition-property: transform;
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease;
+                    transition-delay: 0s;
                     display: inline-block;
                     line-height: 80px;
                     margin: 0 20px;
+
                     a{
                         border-width: 2px;
                         border-color: $cor1;
                         border-style: solid;
                         padding: 10px 18px;
-                        border-radius: 15%;
+                        border-radius: 12%;
 
                     }
                 }
             }
         }
     }
+    .home_present{
+        h1{
+            text-decoration: line-through;
+        }
+        p{
+
+        }
+    }
 }
 
-#navbar_item:hover{
-    background-color: #fefbf679;
+//Animações
+.nav_list{
+    li:hover{
+        transform: translateY(-5px);
+        a{
+            background-color: #070F2B;
+            border-color: #070F2B;
+        }
+    }
 }
