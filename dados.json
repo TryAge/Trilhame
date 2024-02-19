@@ -7,11 +7,52 @@
     {
         "id": 1,
         "titulo": " Engenharia da Computação",
-        "desc": "lorem input"
+        "desc": "Engenharia da Computação combina conceitos de engenharia elétrica e ciência da computação para projetar e desenvolver hardware e software de sistemas computacionais. Os estudantes aprendem sobre circuitos digitais, sistemas embarcados, redes de computadores, linguagens de programação e design de sistemas.        "
     },
     {
         "id": 2,
-        "titulo": "cientista de virus",
-        "desc": "lorem input"
+        "titulo": "Sistemas de Informação",
+        "desc": "Sistemas de Informação é um curso que aborda a aplicação da tecnologia da informação na gestão e resolução de problemas organizacionais. Os alunos aprendem sobre desenvolvimento de sistemas de informação, gestão de projetos, análise de processos de negócios, banco de dados e segurança da informação."
+    },
+    {
+        "id": 3,
+        "titulo": "Gestão da Tecnologia da Informação",
+        "desc": "Gestão da Tecnologia da Informação é focado na gestão estratégica e operacional dos recursos de tecnologia da informação de uma organização. Os alunos estudam planejamento de TI, governança de TI, gestão de projetos, gestão de serviços de TI, liderança e inovação tecnológica."
+    },
+    {
+        "id": 4,
+        "titulo": "Análise e Desenvolvimento de Sistemas",
+        "desc": "Este curso concentra-se na análise, projeto, implementação e manutenção de sistemas de informação. Os alunos aprendem sobre linguagens de programação, bancos de dados, desenvolvimento web, engenharia de software, métodos de teste e gestão de projetos de software."
+    },
+    {
+        "id": 5,
+        "titulo": "Rede de Computadores",
+        "desc": "Rede de Computadores é voltado para o projeto, implementação e manutenção de redes de computadores. Os estudantes estudam protocolos de rede, infraestrutura de rede, segurança de rede, administração de sistemas distribuídos e serviços de rede."
+    },
+    {
+        "id": 6,
+        "titulo": "Sistemas para Internet",
+        "desc": "Este curso enfoca o desenvolvimento de sistemas e aplicações para a internet. Os alunos aprendem sobre programação web, design de interfaces de usuário, tecnologias de internet, desenvolvimento de aplicativos móveis e segurança de sistemas web."
+    },
+    {
+        "id": 7,
+        "titulo": "Engenharia de Controle e Automação",
+        "desc": "Engenharia de Controle e Automação combina princípios de engenharia elétrica, eletrônica e computação para projetar sistemas automatizados e controlados por computador. Os estudantes aprendem sobre sistemas embarcados, controle de processos industriais, robótica e automação de sistemas."
+    },
+    {
+        "id": 8,
+        "titulo": "Banco de dados",
+        "desc": "Este curso se concentra no projeto, implementação e administração de bancos de dados. Os alunos estudam modelagem de dados, linguagens de consulta, administração de banco de dados, otimização de desempenho e segurança de dados."
+    },
+    {
+        "id": 9,
+        "titulo": "Cibersegurança",
+        "desc": "A cibersegurança é voltada para a proteção de sistemas de informação contra ameaças cibernéticas. Os alunos aprendem sobre segurança de rede, criptografia, análise de vulnerabilidades, forense digital e políticas de segurança."
+    },
+    {
+        "id": 10,
+        "titulo": "Computação",
+        "desc": "O objetivo deste curso é formar profissionais com sólida base humanística e tecnológica para atuar como professores na educação básica e em espaços não escolares, e na pesquisa, desenvolvimento e inovação em práticas educacionais."
     }
+
 ]
