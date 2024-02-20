@@ -1,0 +1,67 @@
+$main-c: #FEFBF6;
+$maincont-c: #070F2B;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    nav{
+        .logo{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 36px;
+            line-height: 80px;
+            padding: 0 80px;
+            font-weight: bold;
+            margin-top: 10%;
+        }
+        ul{
+            float: right;
+            margin-right: 80px;
+            li{
+                transition-property: transform;
+                transition-duration: 0.3s;
+                transition-timing-function: ease;
+                transition-delay: 0s;
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 20px;
+                border: 5px solid blue;
+                border-radius: 25%;
+                margin-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                a{
+                    border-width: 2px;
+                    border-color: $main-c;
+                    border-style: solid;
+                    padding: 10px 18px;
+                    border-radius: 12%;
+
+                }
+            }
+        }
+    }
+}   
+
+main {
+    max-width: 800px;
+    margin: auto;
+} h1 {
+    font-size: 6em;
+    font-family: monospace;
+} form {
+    label {
+        font-size: 2em;
+    }
+
+    .largos{
+        width: 50vw;
+
+    }
+}
