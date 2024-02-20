@@ -26,22 +26,27 @@
         <h1>Nos diga oque você achou</h1>
         <form action="../forms.php" method="post">
 
-            <label for="email">Caso queira se identificar: </label><br>
+            <label for="email">Caso você deseje se identificar: </label><br>
         
-            <input class="largos" placeholder="Ponha seu email aqui" type="email" name="email" id="email" required>
+            <input class="largos" placeholder="Ponha seu email aqui" type="email" name="email" id="email" required> <br>
             
+            <label for="rating">Forneça uma nota equivalente para o projeto</label>
+
             <div class="rating">
+                péssimo
               <input type="radio" name="star" id="star1"><label for="star1"></label>
               <input type="radio" name="star" id="star2"><label for="star2"></label>
               <input type="radio" name="star" id="star3"><label for="star3"></label>
               <input type="radio" name="star" id="star4"><label for="star4"></label>
               <input type="radio" name="star" id="star5"><label for="star5"></label>
-              
+              ótimo
             </div>
-        
-            <input class="largos"  name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua observação aquui!" required></input> <br>
-        
-            <button type="submit">Enviar</button>
+    
+            <label for="mensagem">Dê sua opinião sobre melhorias ou o que pode ser retirado.</label>
+            <textarea height="10px" class="largos"  name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua observação aquui!" required></textarea> <br>
+
+
+            <button widht type="submit">Enviar</button>
         </form>
     </main>
     
