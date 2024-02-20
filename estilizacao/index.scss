@@ -1,5 +1,7 @@
-$cor1: #FEFBF6;
+$main-c: #FEFBF6;
+$maincont-c: #070F2B;
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     padding: 0%;
@@ -8,12 +10,13 @@ $cor1: #FEFBF6;
 }
 
 header{
-    height: 85vh;
-    background-image: url(https://profissoes.vagas.com.br/wp-content/uploads/2021/06/como-trabalhar-com-tecnologia-scaled-e1625137597564.jpg);
+    min-height: 85vh;
+    background-image: url(https://mindmatters.ai/wp-content/uploads/sites/2/2020/02/Computer-programmer-Adobe-Stock-298063823.jpeg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     div{
-        color: $cor1;
+        color: $main-c;
         nav{
             .logo{
                 font-family: 'Times New Roman', Times, serif;
@@ -36,7 +39,7 @@ header{
 
                     a{
                         border-width: 2px;
-                        border-color: $cor1;
+                        border-color: $main-c;
                         border-style: solid;
                         padding: 10px 18px;
                         border-radius: 12%;
@@ -46,12 +49,34 @@ header{
             }
         }
     }
-    .home_present{
+    .text_header{
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 400px;
+        margin: 60px 120px;
+
         h1{
-            text-decoration: line-through;
+            font-size: 42px;
+            text-decoration: underline;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 2px;
+            line-height: 55px;
+            margin-bottom: 20px;
         }
         p{
-
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        a{
+            background-color: $main-c;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $maincont-c;
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            transition: 0.3s;
+            transition-property: background;
+            border-radius: 10px;
         }
     }
 }
@@ -61,8 +86,15 @@ header{
     li:hover{
         transform: translateY(-5px);
         a{
-            background-color: #070F2B;
-            border-color: #070F2B;
+            background-color: $maincont-c;
+            border-color: $maincont-c;
         }
+    }
+}
+
+.text_header{
+    a:hover{
+        background-color: $maincont-c;
+        color: $main-c;
     }
 }

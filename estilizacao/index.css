@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -6,9 +7,10 @@
 }
 
 header {
-  height: 85vh;
-  background-image: url(https://profissoes.vagas.com.br/wp-content/uploads/2021/06/como-trabalhar-com-tecnologia-scaled-e1625137597564.jpg);
+  min-height: 85vh;
+  background-image: url(https://mindmatters.ai/wp-content/uploads/sites/2/2020/02/Computer-programmer-Adobe-Stock-298063823.jpeg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 header div {
@@ -41,13 +43,45 @@ header div nav ul li a {
   padding: 10px 18px;
   border-radius: 12%;
 }
-header .home_present h1 {
-  text-decoration: line-through;
+header .text_header {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 400px;
+  margin: 60px 120px;
 }
+header .text_header h1 {
+  font-size: 42px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+header .text_header p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+header .text_header a {
+  background-color: #FEFBF6;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #070F2B;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  transition: 0.3s;
+  transition-property: background;
+  border-radius: 10px;
+}
+
 .nav_list li:hover {
   transform: translateY(-5px);
 }
 .nav_list li:hover a {
   background-color: #070F2B;
   border-color: #070F2B;
+}
+
+.text_header a:hover {
+  background-color: #070F2B;
+  color: #FEFBF6;
 }/*# sourceMappingURL=index.css.map */
