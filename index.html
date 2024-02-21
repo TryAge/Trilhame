@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body onload="carregarDados()">
-    <header>
+    <header class="header_main">
         <div>
             <nav>
                 <label class="logo">Trilhame</label>
@@ -29,6 +29,56 @@
             <a href="#">Saber mais</a>
         </div>
     </header>
+    <main class="main_index">
+        <h2>Conheça os cursos e áreas da tecnologia...</h2>
+        <div class="slider">
+            <div class="slides">
+                <!--buttons/start-->
+                    <input type="radio" name="radiobtn" id="radio1">
+                    <input type="radio" name="radiobtn" id="radio2">
+                    <input type="radio" name="radiobtn" id="radio3">
+                    <input type="radio" name="radiobtn" id="radio4">
+                <!--buttons/end-->
+
+                <!--slide/start-->
+                <div class="slide first">   
+                    <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="">
+                </div>
+                <div class="slide">   
+                    <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="">
+                </div>
+                <div class="slide">   
+                    <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="">
+                </div>
+                <div class="slide">   
+                    <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="">
+                </div>
+                <!--slide/end-->
+                <!--automatic-navigation/start-->
+                <div class="navigation auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+
+                </div>
+                <!--automatic-navigation/end-->
+            </div>
+            <!--manual-navigation-start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual-navigation-end-->
+        </div>
+        <h2>Sobre a equipe e o projeto</h2>
+        <section>
+
+        </section>
+        
+    </main>
     <!--
         <main>
         <h1>Lista de Profissões</h1>

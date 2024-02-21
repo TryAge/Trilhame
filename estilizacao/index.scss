@@ -9,7 +9,7 @@ $maincont-c: #070F2B;
     box-sizing: border-box;
 }
 
-header{
+.header_main{
     min-height: 85vh;
     background-image: url(https://mindmatters.ai/wp-content/uploads/sites/2/2020/02/Computer-programmer-Adobe-Stock-298063823.jpeg);
     background-size: cover;
@@ -81,6 +81,57 @@ header{
     }
 }
 
+.main_index{
+    min-height: 100vh;
+    margin: 40px 120px;
+    h2{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    //slider section
+    .slider{
+        width: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+        .slides{
+            display: flex;
+            width: 500%;
+            input{
+                display: none;
+            }
+            slide{
+                width: 20%;
+                transition: 2s;
+            }
+            img{
+                width: 600px;
+                height: 600px;
+            }
+        }
+        .navigation-manual{
+            position: absolute;
+            width: 800px;
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+            .manual-btn{
+                border: 2px solid $maincont-c;
+                padding: 5px;
+                border-radius: 10px;
+                transition: 1s;
+                cursor: pointer;
+            }
+
+        }
+
+    }
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
 //Animações
 .nav_list{
     li:hover{
@@ -97,4 +148,21 @@ header{
         background-color: $maincont-c;
         color: $main-c;
     }
+}
+
+.manual-btn:hover{
+    background-color: $maincont-c;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
 }
