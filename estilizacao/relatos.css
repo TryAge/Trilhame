@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -33,19 +35,8 @@ header nav ul li a {
 }
 
 main {
+  max-width: 1000px;
+  margin: auto;
   margin-top: 10px;
-  margin-left: 50px;
-  max-width: 980px;
-  text-align: justify;
-}
-main h1 {
-  margin-bottom: 50px;
-  font-size: 5em;
-}
-main h2 {
-  margin-bottom: 10px;
-  margin-top: 5px;
-}
-main li {
-  list-style: none;
-}/*# sourceMappingURL=cursos.css.map */
+  font-size: 1.5em;
+}/*# sourceMappingURL=relatos.css.map */
