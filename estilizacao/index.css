@@ -74,51 +74,50 @@
 }
 
 .main_index {
-  min-height: 100vh;
+  min-height: 80vh;
   margin: 40px 120px;
 }
 .main_index h2 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 28px;
+  margin-bottom: 40px;
+  text-decoration: underline;
 }
-.main_index .slider {
-  width: 600px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.main_index .slider .slides {
+.main_index .main_image_text {
   display: flex;
-  width: 500%;
 }
-.main_index .slider .slides input {
-  display: none;
+.main_index .main_image_text img {
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 15px;
 }
-.main_index .slider .slides slide {
-  width: 20%;
-  transition: 2s;
-}
-.main_index .slider .slides img {
-  width: 600px;
-  height: 600px;
-}
-.main_index .slider .navigation-manual {
-  position: absolute;
-  width: 800px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-.main_index .slider .navigation-manual .manual-btn {
-  border: 2px solid #070F2B;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-  cursor: pointer;
+.main_index .main_image_text p {
+  margin-left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  max-width: 400px;
 }
 
-.manual-btn:not(:last-child) {
-  margin-right: 40px;
+.section_index {
+  min-height: 80vh;
+  color: #FEFBF6;
+  background-color: #070F2B;
+}
+.section_index .section_content {
+  margin: 40px 120px;
+}
+.section_index .section_content h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+.section_index .section_content p {
+  max-width: 800px;
+  font-weight: 600;
 }
 
 .nav_list li:hover {
@@ -132,24 +131,4 @@
 .text_header a:hover {
   background-color: #070F2B;
   color: #FEFBF6;
-}
-
-.manual-btn:hover {
-  background-color: #070F2B;
-}
-
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-  margin-left: -20%;
-}
-
-#radio3:checked ~ .first {
-  margin-left: -40%;
-}
-
-#radio4:checked ~ .first {
-  margin-left: -60%;
 }/*# sourceMappingURL=index.css.map */

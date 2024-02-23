@@ -82,54 +82,50 @@ $maincont-c: #070F2B;
 }
 
 .main_index{
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 40px 120px;
     h2{
         text-transform: uppercase;
         font-weight: 700;
         font-size: 28px;
+        margin-bottom: 40px;
+        text-decoration: underline;
     }
-    //slider section
-    .slider{
-        width: 600px;
-        border-radius: 10px;
-        overflow: hidden;
-        .slides{
-            display: flex;
-            width: 500%;
-            input{
-                display: none;
-            }
-            slide{
-                width: 20%;
-                transition: 2s;
-            }
-            img{
-                width: 600px;
-                height: 600px;
-            }
+    .main_image_text{
+        display: flex;
+        img{
+            max-width: 500px;
+            max-height: 500px;
+            border-radius: 15px;
         }
-        .navigation-manual{
-            position: absolute;
-            width: 800px;
-            margin-top: -40px;
-            display: flex;
-            justify-content: center;
-            .manual-btn{
-                border: 2px solid $maincont-c;
-                padding: 5px;
-                border-radius: 10px;
-                transition: 1s;
-                cursor: pointer;
-            }
-
+        p{
+            margin-left: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            max-width: 400px;
         }
-
     }
 }
 
-.manual-btn:not(:last-child){
-    margin-right: 40px;
+.section_index{
+    min-height: 80vh;
+    color: $main-c;
+    background-color: $maincont-c;
+    .section_content{
+        margin: 40px 120px;
+        h2{
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 28px;
+            margin-bottom: 40px;
+            text-decoration: underline;
+        }
+        p{
+            max-width: 800px;
+            font-weight: 600;
+        }
+    }
 }
 
 //Animações
@@ -148,21 +144,4 @@ $maincont-c: #070F2B;
         background-color: $maincont-c;
         color: $main-c;
     }
-}
-
-.manual-btn:hover{
-    background-color: $maincont-c;
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~ .first{
-    margin-left: -20%;
-}
-#radio3:checked ~ .first{
-    margin-left: -40%;
-}
-#radio4:checked ~ .first{
-    margin-left: -60%;
 }
