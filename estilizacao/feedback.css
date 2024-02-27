@@ -3,6 +3,13 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FEFBF6;
+  color: #070F2B;
+  height: 110vh;
 }
 
 header nav .logo {
@@ -12,6 +19,7 @@ header nav .logo {
   padding: 0 80px;
   font-weight: bold;
   margin-top: 10%;
+  transition: 0.3s;
 }
 header nav ul {
   float: right;
@@ -28,27 +36,63 @@ header nav ul li {
 }
 header nav ul li a {
   border-width: 2px;
-  border-color: 0;
+  border-color: #070F2B;
   border-style: solid;
   padding: 10px 18px;
   border-radius: 12%;
 }
 
 main {
+  color: #070F2B;
   max-width: 800px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
 }
-
-h1 {
-  font-size: 6em;
+main h1 {
+  font-size: 42px;
   font-family: monospace;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+main form label {
+  font-size: 21px;
+}
+main form .largos {
+  width: 50vw;
+  background-color: #FEFBF6;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #070F2B;
+}
+main form .button_submit {
+  padding: 5px 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #070F2B;
+  background-color: #070F2B;
+  color: #FEFBF6;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-weight: 700;
+  transition: 0.2s;
 }
 
-form label {
-  font-size: 1.4em;
-  margin-bottom: 205px;
+.nav_list li:hover {
+  transform: translateY(-5px);
 }
-form .largos {
-  width: 50vw;
+.nav_list li:hover a {
+  color: #FEFBF6;
+  background-color: #070F2B;
+}
+
+.button_submit:hover {
+  background-color: #FEFBF6;
+  color: #070F2B;
+}
+
+.logo:hover {
+  color: rgba(7, 15, 43, 0.7803921569);
+  font-size: 38px;
 }/*# sourceMappingURL=feedback.css.map */

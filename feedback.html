@@ -6,12 +6,14 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilizacao/feedback.css">
     <title>Feedback</title>
+
+    <link rel="stylesheet" href="src/output.css">
 </head>
 <body>
     <header>
         <div>
             <nav>
-                <label class="logo">Trilhame</label>
+                <label class="logo"><a href="index.html">Trilhame</a></label>
                 <ul class="nav_list">
                     <li><a id="navbar_item" href="areas.html"><b>Área</b></a></li>
                     <li><a id="navbar_item" href="relatos.html"><b>Relatos</b></a></li>
@@ -21,17 +23,16 @@
             </nav>
         </div>
     </header>
+
     <main>
 
-        <h1>Nos diga oque você achou</h1>
+        <h1>Nos diga o que você achou</h1>
         <form action="../forms.php" method="post">
 
-            <label for="email">Caso você deseje se identificar: </label><br>
-        
-            <input class="largos" placeholder="Ponha seu email aqui" type="email" name="email" id="email" required> <br>
-            
-            <label for="rating">Forneça uma nota equivalente para o projeto</label>
+            <label for="email">Caso você deseje se identificar: </label><br>   
+            <input class="largos" placeholder=" Ponha seu email aqui" type="email" name="email" id="email" required> <br>
 
+            <label for="rating">Forneça uma nota equivalente para o projeto</label>
             <div class="rating">
                 péssimo
               <input type="radio" name="star" id="star1"><label for="star1"></label>
@@ -43,10 +44,9 @@
             </div>
     
             <label for="mensagem">Dê sua opinião sobre melhorias ou o que pode ser retirado.</label>
-            <textarea height="10px" class="largos"  name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua observação aquui!" required></textarea> <br>
+            <textarea height="10px" class="largos"  name="mensagem" id="mensagem" cols="30" rows="10" placeholder=" Digite sua observação aqui!" required></textarea><br>
 
-
-            <button widht type="submit">Enviar</button>
+            <button widht type="submit" class="button_submit">Enviar</button>
         </form>
     </main>
     
