@@ -35,8 +35,34 @@ header nav ul li a {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1600px;
   margin: auto;
   margin-top: 10px;
   font-size: 1.5em;
+}
+main ul {
+  margin-top: 20px;
+  margin: 20px auto 10px auto;
+  max-width: 1200px;
+}
+main ul li {
+  margin-top: 15px;
+  list-style: none;
+  background-color: rgb(118, 118, 255);
+  padding: 10px;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+main ul li h1 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+main ul li p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+main ul li iframe {
+  min-width: 150px;
+  min-height: 150px;
+  margin: auto;
 }/*# sourceMappingURL=relatos.css.map */
