@@ -27,7 +27,7 @@
     <main>
 
         <h1>Nos diga o que você achou</h1>
-        <form action="../forms.php" method="post">
+        <form id="feedbackForm">
 
             <label for="email">Caso você deseje se identificar: </label><br>   
             <input class="largos" placeholder=" Ponha seu email aqui" type="email" name="email" id="email" required> <br>
@@ -49,6 +49,64 @@
             <button widht type="submit" class="button_submit">Enviar</button>
         </form>
     </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore-compat.js"></script>
+   
+
+    <script>
+        // Initialize Firebase
+
+        const firebaseConfig = {
+
+apiKey: "AIzaSyC7P9f6fBSkKLw4AJ0U379OsSYOO1rs4Nc",
+
+authDomain: "profissas-5d75a.firebaseapp.com",
+
+projectId: "profissas-5d75a",
+
+storageBucket: "profissas-5d75a.appspot.com",
+
+messagingSenderId: "142319529130",
+
+appId: "1:142319529130:web:889e78bda0955b8e4d74d3"
+
+};
+
+
+firebase.initializeApp(firebaseConfig);
+
+// Reference to Firestore collection
+const feedbacksCollection = firebase.firestore().collection('feedbacks');
+
+// Form submission
+const feedbackForm = document.getElementById('feedbackForm');
+
+feedbackForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(feedbackForm);
+    const email = formData.get('email');
+    const rating = parseInt(formData.get('rating'));
+    const feedback = formData.get('mensagem');
+
+    // Add data to Firestore
+    feedbacksCollection.add({
+        email: email,
+        rating: rating,
+        feedback: feedback,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    })
+    .then(() => {
+        alert('Feedback enviado com sucesso!');
+        feedbackForm.reset();
+    })
+    .catch((error) => {
+        console.error('Erro ao enviar feedback: ', error);
+    });
+});
+
+    </script>
     
 </body>
 </html>
