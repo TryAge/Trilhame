@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="src/output.css">
 </head>
-<body onload="carregarDados()">
+<body>
     <header class="header_main">
         <div>
             <nav>
@@ -26,7 +26,7 @@
         <div class="text_header">
             <h1>Conheça, Prossiga e Trilhe!</h1>
             <p>Um site informacional que busca sanar suas dúvidas sobre as <em><b>trilhas</b></em> na carreira de tecnologia.</p>
-            <a href="#">Saber mais</a>
+            <button id="scrollButton" href="#">Saber mais</button>
         </div>
     </header>
 
@@ -49,18 +49,7 @@
                 <p>Para isso, buscamos como solução inicial o desenvolvimento de um site que integre o que acreditamos que seja o primeiro passo ideal para se iniciar. O site possui breves resumos sobre as principais áreas de atuação, juntamente com cursos que podem ser realizados de acordo com o interesse do ramo escolhido. Além disso, nos preocupamos em buscar relatos e pequenos projetos que possam ajudar a inspirar e que mostrem um pouco mais na prática como esses profissionais trabalham.</p>
             </div>
     </section>
-    <!--
-        <main>
-        <h1>Lista de Profissões</h1>
-    <ul id="listaProfissoes">
-        *A lista de profissões será gerada aqui*
-    </ul>
-    <ul>
-        <div id="dados"></div>
-    </ul>
-    -->
 
-        
     </main>
 
     
@@ -70,6 +59,14 @@
             
     </footer>
 
-    <script src="scripts/carregarlista.js"></script>
+    <script>
+        document.getElementById('scrollButton').addEventListener('click', function() {
+    window.scrollBy({
+        top: window.innerHeight * 10, // 10% da altura da janela
+        behavior: 'smooth' // suaviza a rolagem
+    });
+});
+
+    </script>
 </body>
 </html>
