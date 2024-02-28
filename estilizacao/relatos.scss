@@ -18,6 +18,7 @@ header {
             padding: 0 80px;
             font-weight: bold;
             margin-top: 10%;
+            transition: 0.3s;
         }
         ul{
             float: right;
@@ -30,11 +31,11 @@ header {
                 display: inline-block;
                 line-height: 80px;
                 margin: 0 20px;
-                
+
 
                 a{
                     border-width: 2px;
-                    border-color: blue($color: #000000);
+                    border-color: $maincont-c;
                     border-style: solid;
                     padding: 10px 18px;
                     border-radius: 12%;
@@ -85,4 +86,20 @@ main{
             }
         }
     }
+}
+
+//Animações
+.nav_list{
+    li:hover{
+        transform: translateY(-5px);
+        a{
+            color: $main-c;
+            background-color: $maincont-c;
+        }
+    }
+}
+
+.logo:hover{
+    color: #070f2bc7;
+    font-size: 38px;
 }

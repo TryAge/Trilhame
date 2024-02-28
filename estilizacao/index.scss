@@ -24,6 +24,7 @@ $maincont-c: #070F2B;
                 line-height: 80px;
                 padding: 0 80px;
                 font-weight: bold;
+                transition: 0.3s;
             }
             ul{
                 float: right;
@@ -144,4 +145,8 @@ $maincont-c: #070F2B;
         background-color: $maincont-c;
         color: $main-c;
     }
+}
+
+.logo:hover{
+    color: #070f2bc7;
 }
