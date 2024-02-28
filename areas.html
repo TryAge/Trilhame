@@ -12,7 +12,7 @@
     <header>
         <div>
             <nav>
-                <label class="logo">Trilhame</label>
+                <label class="logo"><a href="index.html">Trilhame</a></label>
                 <ul class="nav_list">
                     <li><a id="navbar_item" href="areas.html"><b>Áreas</b></a></li>
                     <li><a id="navbar_item" href="relatos.html"><b>Relatos</b></a></li>
@@ -23,9 +23,52 @@
         </div>
     </header>
 <main>
+    <h1>Ferramenta de Pesquisa</h1>
+    <input type="text" id="searchInput" placeholder="Digite sua pesquisa...">
+    <button onclick="search()">Pesquisar</button>
+    <button onclick="clearHighlights()">Limpar Destaques</button>
+    
+    <script>
+        function search() {
+            const termoPesquisa = document.getElementById('searchInput').value.toLowerCase();
+            const conteudo = document.getElementById('conteudo');
+            const conteudoHTML = conteudo.innerHTML;
+
+            // Cria uma expressão regular para buscar o termo de pesquisa no conteúdo da página
+            const regex = new RegExp(termoPesquisa, 'gi');
+            const resultados = conteudoHTML.match(regex);
+
+            if (resultados !== null) {
+                // Adiciona a classe 'destaque' às partes do texto que contêm o termo de pesquisa
+                const conteudoDestacado = conteudoHTML.replace(regex, `<span class="destaque">${termoPesquisa}</span>`);
+                conteudo.innerHTML = conteudoDestacado;
+
+                // Encontra o primeiro elemento destacado e rola a página até ele
+                const primeiroDestaque = document.querySelector('.destaque');
+                primeiroDestaque.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                alert('Termo de pesquisa não encontrado.');
+            }
+        }
+
+        function clearHighlights() {
+            // Remove a classe 'destaque' de todos os elementos
+            const elementosDestaque = document.querySelectorAll('.destaque');
+            elementosDestaque.forEach(elemento => {
+                elemento.outerHTML = elemento.innerHTML; // Remove a tag <span> mantendo o texto
+            });
+        }
+    </script>
+
+    <style>
+        .destaque {
+            background-color: yellow;
+        }
+    </style>
+</html>
     <h1>Lista de áreas de atuação</h1>
         <br>
-         <div id="areas">
+         <div id="conteudo">
             <h2>Desenvolvimento de software</h2>
                 <p>
                     <strong>Descrição</strong>:Envolve a criação, manutenção e aprimoramento de programas de computador, abrangendo desde aplicativos simples até sistemas complexos.
