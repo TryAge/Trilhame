@@ -29,10 +29,15 @@
     <input type="text" id="searchInput" placeholder="Digite sua pesquisa...">
     <button onclick="search()">Pesquisar</button>
     <button onclick="clearHighlights()">Limpar Destaques</button>
-    
+
     <script>
         function search() {
-            const termoPesquisa = document.getElementById('searchInput').value.toLowerCase();
+            const termoPesquisa = document.getElementById('searchInput').value.toLowerCase().trim();
+            if (termoPesquisa === "") {
+                alert("Por favor, insira um termo de pesquisa.");
+                return;
+            }
+
             const conteudo = document.getElementById('conteudo');
             const conteudoHTML = conteudo.innerHTML;
 

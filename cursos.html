@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,11 @@
     <title>Cursos</title>
 
     <link rel="stylesheet" href="src/output.css">
+    <style>
+        .destaque {
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body onload="carregarDados()">
     <header>
@@ -25,43 +30,78 @@
         </div>
     </header>
     <main>
-    <h1>Lista de Cursos</h1>
-    <ul id="listaProfissoes">
-    </ul>
-    <ul>
-        <li>
-            <div id="dados"></div>
-        </li>
-    </ul>
+        <h1>Lista de Cursos</h1>
+        <input type="text" id="searchInput" placeholder="Digite sua pesquisa...">
+        <button onclick="search()">Pesquisar</button>
+        <button onclick="clearHighlights()">Limpar Destaques</button>
+        <ul id="listaProfissoes">
+        </ul>
+        <ul>
+            <li>
+                <div id="dados"></div>
+            </li>
+        </ul>
     </main>
-
-
     
     <script>
-         function carregarDados() {
-    // Faz uma requisição HTTP para carregar o arquivo JSON
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            // Parse do JSON para um objeto JavaScript
-            var dados = JSON.parse(xhr.responseText);
+        function carregarDados() {
+            // Faz uma requisição HTTP para carregar o arquivo JSON
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Parse do JSON para um objeto JavaScript
+                    var dados = JSON.parse(xhr.responseText);
 
-            // Monta o HTML para exibir os dados
-            var html = "";
-            for (var i = 0; i < dados.length; i++) {
-                html += "<h2>" + dados[i].titulo + "</h2>" + "<br><h3>Descrição</h3>" +
-                        "<p>" + dados[i].desc + "</p><br><h3>Área de atuação</h3>" +
-                        "<p>" + dados[i].area + "</p>";
+                    // Monta o HTML para exibir os dados
+                    var html = "";
+                    for (var i = 0; i < dados.length; i++) {
+                        html += "<h2>" + dados[i].titulo + "</h2>" + "<br><h3>Descrição</h3>" +
+                                "<p>" + dados[i].desc + "</p><br><h3>Área de atuação</h3>" +
+                                "<p>" + dados[i].area + "</p>";
+                    }
+
+                    // Insere o HTML na div com id "dados"
+                    document.getElementById("dados").innerHTML = html;
+                }
+            };
+            xhr.open("GET", "dados.json", true);
+            xhr.send();
+        }
+
+        function search() {
+            const termoPesquisa = document.getElementById('searchInput').value.toLowerCase().trim();
+            if (termoPesquisa === "") {
+                alert("Por favor, insira um termo de pesquisa.");
+                return;
             }
 
-            // Insere o HTML na div com id "dados"
-            document.getElementById("dados").innerHTML = html;
-        }
-    };
-    xhr.open("GET", "dados.json", true);
-    xhr.send();
-}
+            const conteudo = document.getElementById('dados');
+            const conteudoHTML = conteudo.innerHTML;
 
+            // Cria uma expressão regular para buscar o termo de pesquisa no conteúdo da página
+            const regex = new RegExp(termoPesquisa, 'gi');
+            const resultados = conteudoHTML.match(regex);
+
+            if (resultados !== null) {
+                // Adiciona a classe 'destaque' às partes do texto que contêm o termo de pesquisa
+                const conteudoDestacado = conteudoHTML.replace(regex, `<span class="destaque">${termoPesquisa}</span>`);
+                conteudo.innerHTML = conteudoDestacado;
+
+                // Encontra o primeiro elemento destacado e rola a página até ele
+                const primeiroDestaque = document.querySelector('.destaque');
+                primeiroDestaque.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                alert('Termo de pesquisa não encontrado.');
+            }
+        }
+
+        function clearHighlights() {
+            // Remove a classe 'destaque' de todos os elementos
+            const elementosDestaque = document.querySelectorAll('.destaque');
+            elementosDestaque.forEach(elemento => {
+                elemento.outerHTML = elemento.innerHTML; // Remove a tag <span> mantendo o texto
+            });
+        }
     </script>
 </body>
 </html>
