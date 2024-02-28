@@ -2,57 +2,68 @@
     {
         "id": 0,
         "titulo": "Ciência da Computação",
-        "desc": "Ciência da Computação é um curso que explora os fundamentos teóricos e práticos da computação, incluindo algoritmos, estruturas de dados, programação, inteligência artificial, computação gráfica, entre outros. Os graduados em Ciência da Computação estão preparados para uma ampla variedade de carreiras técnicas e de pesquisa.        "
+        "desc": "Ciência da Computação é um curso que explora os fundamentos teóricos e práticos da computação, incluindo algoritmos, estruturas de dados, programação, inteligência artificial, computação gráfica, entre outros. Os graduados em Ciência da Computação estão preparados para uma ampla variedade de carreiras técnicas e de pesquisa.",
+        "area": "Desenvolvimento de software, desenvolvimento web, infraestrutura de TI, segurança da informação, gestão de dados, arquitetura de sistemas, Business Intelligence (BI) e Análise de Dados, Cloud Computing e Virtualização."
     },
     {
         "id": 1,
         "titulo": " Engenharia da Computação",
-        "desc": "Engenharia da Computação combina conceitos de engenharia elétrica e ciência da computação para projetar e desenvolver hardware e software de sistemas computacionais. Os estudantes aprendem sobre circuitos digitais, sistemas embarcados, redes de computadores, linguagens de programação e design de sistemas.        "
+        "desc": "Engenharia da Computação combina conceitos de engenharia elétrica e ciência da computação para projetar e desenvolver hardware e software de sistemas computacionais. Os estudantes aprendem sobre circuitos digitais, sistemas embarcados, redes de computadores, linguagens de programação e design de sistemas.",
+        "area": "infraestrutura de TI, segurança da informação, arquitetura de sistemas, Cloud Computing e Virtualização, Desenvolvimento Web"
     },
     {
         "id": 2,
         "titulo": "Sistemas de Informação",
-        "desc": "Sistemas de Informação é um curso que aborda a aplicação da tecnologia da informação na gestão e resolução de problemas organizacionais. Os alunos aprendem sobre desenvolvimento de sistemas de informação, gestão de projetos, análise de processos de negócios, banco de dados e segurança da informação."
+        "desc": "Sistemas de Informação é um curso que aborda a aplicação da tecnologia da informação na gestão e resolução de problemas organizacionais. Os alunos aprendem sobre desenvolvimento de sistemas de informação, gestão de projetos, análise de processos de negócios, banco de dados e segurança da informação.",
+        "area": "Desenvolvimento de Software, Desenvolvimento Web, Gestão de Dados, Business Intelligence (BI) e Análise de Dados, Cloud Computing e Virtualização, Gestão de Serviço de T.I. (ITSM)."
     },
     {
         "id": 3,
         "titulo": "Gestão da Tecnologia da Informação",
-        "desc": "Gestão da Tecnologia da Informação é focado na gestão estratégica e operacional dos recursos de tecnologia da informação de uma organização. Os alunos estudam planejamento de TI, governança de TI, gestão de projetos, gestão de serviços de TI, liderança e inovação tecnológica."
+        "desc": "Gestão da Tecnologia da Informação é focado na gestão estratégica e operacional dos recursos de tecnologia da informação de uma organização. Os alunos estudam planejamento de TI, governança de TI, gestão de projetos, gestão de serviços de TI, liderança e inovação tecnológica.",
+        "area": "Gestão de Projetos de T.I., Gestão de Serviços de T.I. (ITSM)."
     },
     {
         "id": 4,
         "titulo": "Análise e Desenvolvimento de Sistemas",
-        "desc": "Este curso concentra-se na análise, projeto, implementação e manutenção de sistemas de informação. Os alunos aprendem sobre linguagens de programação, bancos de dados, desenvolvimento web, engenharia de software, métodos de teste e gestão de projetos de software."
+        "desc": "Este curso concentra-se na análise, projeto, implementação e manutenção de sistemas de informação. Os alunos aprendem sobre linguagens de programação, bancos de dados, desenvolvimento web, engenharia de software, métodos de teste e gestão de projetos de software.",
+        "area": "Desenvolvimento de Software, Desenvolvimento Web, Suporte Técnico, Gestão de Projetos de T.I."
     },
     {
         "id": 5,
         "titulo": "Rede de Computadores",
-        "desc": "Rede de Computadores é voltado para o projeto, implementação e manutenção de redes de computadores. Os estudantes estudam protocolos de rede, infraestrutura de rede, segurança de rede, administração de sistemas distribuídos e serviços de rede."
+        "desc": "Rede de Computadores é voltado para o projeto, implementação e manutenção de redes de computadores. Os estudantes estudam protocolos de rede, infraestrutura de rede, segurança de rede, administração de sistemas distribuídos e serviços de rede.",
+        "area": "Infraestrutura de TI, Desenvolvimento de Software."
     },
     {
         "id": 6,
         "titulo": "Sistemas para Internet",
-        "desc": "Este curso enfoca o desenvolvimento de sistemas e aplicações para a internet. Os alunos aprendem sobre programação web, design de interfaces de usuário, tecnologias de internet, desenvolvimento de aplicativos móveis e segurança de sistemas web."
+        "desc": "Este curso enfoca o desenvolvimento de sistemas e aplicações para a internet. Os alunos aprendem sobre programação web, design de interfaces de usuário, tecnologias de internet, desenvolvimento de aplicativos móveis e segurança de sistemas web.",
+        "area": "Desenvolvimento de Software, Desenvolvimento Web, Suporte Técnico."
     },
     {
         "id": 7,
         "titulo": "Engenharia de Controle e Automação",
-        "desc": "Engenharia de Controle e Automação combina princípios de engenharia elétrica, eletrônica e computação para projetar sistemas automatizados e controlados por computador. Os estudantes aprendem sobre sistemas embarcados, controle de processos industriais, robótica e automação de sistemas."
+        "desc": "Engenharia de Controle e Automação combina princípios de engenharia elétrica, eletrônica e computação para projetar sistemas automatizados e controlados por computador. Os estudantes aprendem sobre sistemas embarcados, controle de processos industriais, robótica e automação de sistemas.",
+        "area": "Internet das Coisas (IoT), Robótica, Inteligência Artificial e Aprendizado de Máquina, Desenvolvimento de Software, Sistemas Embarcados."
     },
     {
         "id": 8,
         "titulo": "Banco de dados",
-        "desc": "Este curso se concentra no projeto, implementação e administração de bancos de dados. Os alunos estudam modelagem de dados, linguagens de consulta, administração de banco de dados, otimização de desempenho e segurança de dados."
+        "desc": "Este curso se concentra no projeto, implementação e administração de bancos de dados. Os alunos estudam modelagem de dados, linguagens de consulta, administração de banco de dados, otimização de desempenho e segurança de dados.",
+        "area": "Gestão de Dados, Business Intelligence (BI) e Análise de Dados."
     },
     {
         "id": 9,
         "titulo": "Cibersegurança",
-        "desc": "A cibersegurança é voltada para a proteção de sistemas de informação contra ameaças cibernéticas. Os alunos aprendem sobre segurança de rede, criptografia, análise de vulnerabilidades, forense digital e políticas de segurança."
+        "desc": "A cibersegurança é voltada para a proteção de sistemas de informação contra ameaças cibernéticas. Os alunos aprendem sobre segurança de rede, criptografia, análise de vulnerabilidades, forense digital e políticas de segurança.",
+        "area": "Segurança da Informação"
     },
     {
         "id": 10,
         "titulo": "Computação",
-        "desc": "O objetivo deste curso é formar profissionais com sólida base humanística e tecnológica para atuar como professores na educação básica e em espaços não escolares, e na pesquisa, desenvolvimento e inovação em práticas educacionais."
+        "desc": "O objetivo deste curso é formar profissionais com sólida base humanística e tecnológica para atuar como professores na educação básica e em espaços não escolares, e na pesquisa, desenvolvimento e inovação em práticas educacionais.",
+        "area": "Professor de TI, Desenvolvimento de Software, Desenvolvimento Web"
     }
 
 ]

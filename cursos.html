@@ -47,8 +47,9 @@
             // Monta o HTML para exibir os dados
             var html = "";
             for (var i = 0; i < dados.length; i++) {
-                html += "<h2>" + dados[i].titulo + "</h2>" +
-                        "<p>Descrição: " + dados[i].desc + "</p>";
+                html += "<h2>" + dados[i].titulo + "</h2>" + "<br><h3>Descrição</h3>" +
+                        "<p>" + dados[i].desc + "</p><br><h3>Área de atuação</h3>" +
+                        "<p>" + dados[i].area + "</p>";
             }
 
             // Insere o HTML na div com id "dados"
