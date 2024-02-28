@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -10,6 +12,7 @@ header nav .logo {
   padding: 0 80px;
   font-weight: bold;
   margin-top: 10%;
+  transition: 0.3s;
 }
 header nav ul {
   float: right;
@@ -26,7 +29,7 @@ header nav ul li {
 }
 header nav ul li a {
   border-width: 2px;
-  border-color: 0;
+  border-color: #070F2B;
   border-style: solid;
   padding: 10px 18px;
   border-radius: 12%;
@@ -51,4 +54,17 @@ main p {
 }
 main li {
   list-style: none;
+}
+
+.nav_list li:hover {
+  transform: translateY(-5px);
+}
+.nav_list li:hover a {
+  color: #FEFBF6;
+  background-color: #070F2B;
+}
+
+.logo:hover {
+  color: rgba(7, 15, 43, 0.7803921569);
+  font-size: 38px;
 }/*# sourceMappingURL=cursos.css.map */

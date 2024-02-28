@@ -22,6 +22,7 @@
   line-height: 80px;
   padding: 0 80px;
   font-weight: bold;
+  transition: 0.3s;
 }
 .header_main div nav ul {
   float: right;
@@ -131,4 +132,8 @@
 .text_header a:hover {
   background-color: #070F2B;
   color: #FEFBF6;
+}
+
+.logo:hover {
+  color: rgba(7, 15, 43, 0.7803921569);
 }/*# sourceMappingURL=index.css.map */
