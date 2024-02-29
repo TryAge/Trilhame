@@ -12,6 +12,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .header_main div {
   color: #FEFBF6;
@@ -62,38 +63,40 @@
   font-size: 16px;
   margin-bottom: 20px;
 }
-.header_main .text_header a {
+.header_main .text_header button {
   background-color: #FEFBF6;
   text-transform: uppercase;
   font-weight: 700;
   color: #070F2B;
   letter-spacing: 1px;
-  padding: 10px 20px;
+  padding: 8px 18px;
   transition: 0.3s;
   transition-property: background;
   border-radius: 10px;
 }
 
-.main_index {
+main {
   min-height: 80vh;
+}
+main .main_content {
   margin: 40px 120px;
 }
-.main_index h2 {
+main .main_content h2 {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 36px;
   margin-bottom: 40px;
   text-decoration: underline;
 }
-.main_index .main_image_text {
+main .main_content .main_image_text {
   display: flex;
 }
-.main_index .main_image_text img {
+main .main_content .main_image_text img {
   max-width: 500px;
   max-height: 500px;
   border-radius: 15px;
 }
-.main_index .main_image_text p {
+main .main_content .main_image_text p {
   margin-left: 15px;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -107,12 +110,12 @@
   background-color: #070F2B;
 }
 .section_index .section_content {
-  margin: 40px 120px;
+  padding: 40px 120px;
 }
 .section_index .section_content h2 {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 36px;
   margin-bottom: 40px;
   text-decoration: underline;
 }
@@ -129,7 +132,7 @@
   border-color: #070F2B;
 }
 
-.text_header a:hover {
+.text_header button:hover {
   background-color: #070F2B;
   color: #FEFBF6;
 }
