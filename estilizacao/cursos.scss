@@ -113,6 +113,37 @@ main {
     
 }
 
+footer{
+    text-align: justify;
+    background-color: rgba(128, 128, 128, 0.61);
+    padding-top: 10px;
+    height: 45vh;
+    .pessoa{
+
+        display: block;
+        margin-right: 10px;
+        h4{
+            font-weight: bold;
+            
+        }
+
+        p{
+            display: inline-block;
+        }
+
+        img {
+            width: 30px; 
+        }
+    }
+}
+
+#especial{
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.425);
+    text-align: center;
+    font-style: italic;
+}
+
 //Animações
 .nav_list{
     li:hover{

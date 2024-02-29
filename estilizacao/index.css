@@ -14,9 +14,11 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .header_main div {
   color: #FEFBF6;
 }
+
 .header_main div nav .logo {
   font-family: "Times New Roman", Times, serif;
   font-size: 36px;
@@ -25,10 +27,12 @@
   font-weight: bold;
   transition: 0.3s;
 }
+
 .header_main div nav ul {
   float: right;
   margin-right: 80px;
 }
+
 .header_main div nav ul li {
   transition-property: transform;
   transition-duration: 0.3s;
@@ -38,6 +42,7 @@
   line-height: 80px;
   margin: 0 20px;
 }
+
 .header_main div nav ul li a {
   border-width: 2px;
   border-color: #FEFBF6;
@@ -45,11 +50,13 @@
   padding: 10px 18px;
   border-radius: 12%;
 }
+
 .header_main .text_header {
   font-family: Arial, Helvetica, sans-serif;
   max-width: 400px;
   margin: 60px 120px;
 }
+
 .header_main .text_header h1 {
   font-size: 42px;
   text-decoration: underline;
@@ -59,10 +66,12 @@
   line-height: 55px;
   margin-bottom: 20px;
 }
+
 .header_main .text_header p {
   font-size: 16px;
   margin-bottom: 20px;
 }
+
 .header_main .text_header button {
   background-color: #FEFBF6;
   text-transform: uppercase;
@@ -78,9 +87,11 @@
 main {
   min-height: 80vh;
 }
+
 main .main_content {
   margin: 40px 120px;
 }
+
 main .main_content h2 {
   text-transform: uppercase;
   font-weight: 700;
@@ -88,14 +99,17 @@ main .main_content h2 {
   margin-bottom: 40px;
   text-decoration: underline;
 }
+
 main .main_content .main_image_text {
   display: flex;
 }
+
 main .main_content .main_image_text img {
   max-width: 500px;
   max-height: 500px;
   border-radius: 15px;
 }
+
 main .main_content .main_image_text p {
   margin-left: 15px;
   font-family: Arial, Helvetica, sans-serif;
@@ -109,9 +123,11 @@ main .main_content .main_image_text p {
   color: #FEFBF6;
   background-color: #070F2B;
 }
+
 .section_index .section_content {
   padding: 40px 120px;
 }
+
 .section_index .section_content h2 {
   text-transform: uppercase;
   font-weight: 700;
@@ -119,6 +135,7 @@ main .main_content .main_image_text p {
   margin-bottom: 40px;
   text-decoration: underline;
 }
+
 .section_index .section_content p {
   max-width: 800px;
   font-weight: 600;
@@ -127,6 +144,7 @@ main .main_content .main_image_text p {
 .nav_list li:hover {
   transform: translateY(-5px);
 }
+
 .nav_list li:hover a {
   background-color: #070F2B;
   border-color: #070F2B;
@@ -139,4 +157,4 @@ main .main_content .main_image_text p {
 
 .logo:hover {
   color: rgba(7, 15, 43, 0.7803921569);
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
