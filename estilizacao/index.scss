@@ -15,6 +15,7 @@ $maincont-c: #070F2B;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     div{
         color: $main-c;
         nav{
@@ -68,13 +69,13 @@ $maincont-c: #070F2B;
             font-size: 16px;
             margin-bottom: 20px;
         }
-        a{
+        button{
             background-color: $main-c;
             text-transform: uppercase;
             font-weight: 700;
             color: $maincont-c;
             letter-spacing: 1px;
-            padding: 10px 20px;
+            padding: 8px 18px;
             transition: 0.3s;
             transition-property: background;
             border-radius: 10px;
@@ -82,31 +83,33 @@ $maincont-c: #070F2B;
     }
 }
 
-.main_index{
+main{
     min-height: 80vh;
-    margin: 40px 120px;
-    h2{
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 28px;
-        margin-bottom: 40px;
-        text-decoration: underline;
-    }
-    .main_image_text{
-        display: flex;
-        img{
-            max-width: 500px;
-            max-height: 500px;
-            border-radius: 15px;
-        }
-        p{
-            margin-left: 15px;
-            font-family: Arial, Helvetica, sans-serif;
+    .main_content{
+        margin: 40px 120px;
+        h2{
             text-transform: uppercase;
             font-weight: 700;
-            max-width: 400px;
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-decoration: underline;
         }
-    }
+        .main_image_text{
+            display: flex;
+            img{
+                max-width: 500px;
+                max-height: 500px;
+                border-radius: 15px;
+            }
+            p{
+                margin-left: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+                font-weight: 700;
+                max-width: 400px;
+            }
+        }
+    } 
 }
 
 .section_index{
@@ -114,11 +117,11 @@ $maincont-c: #070F2B;
     color: $main-c;
     background-color: $maincont-c;
     .section_content{
-        margin: 40px 120px;
+        padding: 40px 120px;
         h2{
             text-transform: uppercase;
             font-weight: 700;
-            font-size: 28px;
+            font-size: 36px;
             margin-bottom: 40px;
             text-decoration: underline;
         }
@@ -128,11 +131,6 @@ $maincont-c: #070F2B;
         }
     }
 }
-
-.section_content{
-    padding-top: 50px;
-}
-
 //Animações
 .nav_list{
     li:hover{
@@ -145,7 +143,7 @@ $maincont-c: #070F2B;
 }
 
 .text_header{
-    a:hover{
+    button:hover{
         background-color: $maincont-c;
         color: $main-c;
     }
