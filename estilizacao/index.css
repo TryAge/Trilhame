@@ -121,6 +121,10 @@
   font-weight: 600;
 }
 
+.section_content {
+  padding-top: 50px;
+}
+
 .nav_list li:hover {
   transform: translateY(-5px);
 }

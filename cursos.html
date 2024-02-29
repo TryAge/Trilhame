@@ -32,14 +32,12 @@
     <main>
         <h1>Lista de Cursos</h1>
         <input type="text" id="searchInput" placeholder="Digite sua pesquisa...">
-        <button onclick="search()">Pesquisar</button>
-        <button onclick="clearHighlights()">Limpar Destaques</button>
+        <button onkeypress="search()" onclick="search()">&#128269;</button>
+        <button onclick="clearHighlights()">🧹</button>
         <ul id="listaProfissoes">
         </ul>
         <ul>
-            <li>
-                <div id="dados"></div>
-            </li>
+            <div id="dados"></div>
         </ul>
     </main>
     
@@ -55,9 +53,9 @@
                     // Monta o HTML para exibir os dados
                     var html = "";
                     for (var i = 0; i < dados.length; i++) {
-                        html += "<h2>" + dados[i].titulo + "</h2>" + "<br><h3>Descrição</h3>" +
+                        html += "<li class='cursos'> <h2>" + dados[i].titulo + "</h2>" + "<br><h3>Descrição</h3>" +
                                 "<p>" + dados[i].desc + "</p><br><h3>Área de atuação</h3>" +
-                                "<p>" + dados[i].area + "</p>";
+                                "<p>" + dados[i].area + "</p> </li>";
                     }
 
                     // Insere o HTML na div com id "dados"
