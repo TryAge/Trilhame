@@ -22,63 +22,20 @@
                 </ul>
             </nav>
         </div>
+        <div class="text_header_areas">
+            <div class="container">
+                <h1>Áreas</h1>
+                <p>Aqui você terá acesso as mais diversas áreas do ramo da tecnologia, apresentando breves informações para que você tenha o melhor acesso para explorar. Sinta-se à vontade para ver o melhor ramo que se encaixa com o seu perfil!</p>
+            </div>
+        </div>
     </header>
 <main>
-
-    <h1>Lista de áreas de atuação</h1>
-
-    <div"><input type="text" id="searchInput" placeholder="Digite sua pesquisa..."></div>
-    
-    <button onkeypress="search()" onclick="search()">&#128269;</button>
-    <button onclick="clearHighlights()">🧹</button>
-
-    <script>
-        function search() {
-            const termoPesquisa = document.getElementById('searchInput').value.toLowerCase().trim();
-            if (termoPesquisa === "") {
-                alert("Por favor, insira um termo de pesquisa.");
-                return;
-            }
-
-            const conteudo = document.getElementById('conteudo');
-            const conteudoHTML = conteudo.innerHTML;
-
-            // Cria uma expressão regular para buscar o termo de pesquisa no conteúdo da página
-            const regex = new RegExp(termoPesquisa, 'gi');
-            const resultados = conteudoHTML.match(regex);
-
-            if (resultados !== null) {
-                // Adiciona a classe 'destaque' às partes do texto que contêm o termo de pesquisa
-                const conteudoDestacado = conteudoHTML.replace(regex, `<span class="destaque">${termoPesquisa}</span>`);
-                conteudo.innerHTML = conteudoDestacado;
-
-                // Encontra o primeiro elemento destacado e rola a página até ele
-                const primeiroDestaque = document.querySelector('.destaque');
-                primeiroDestaque.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            } else {
-                alert('Termo de pesquisa não encontrado.');
-            }
-        }
-
-        function clearHighlights() {
-            // Remove a classe 'destaque' de todos os elementos
-            const elementosDestaque = document.querySelectorAll('.destaque');
-            elementosDestaque.forEach(elemento => {
-                elemento.outerHTML = elemento.innerHTML; // Remove a tag <span> mantendo o texto
-            });
-        }
-    </script>
-
-    <style>
-        .destaque {
-            background-color: yellow;
-        }
-    </style>
-</html>
-    
-        <br>
-         <div id="conteudo">
-
+    </div>
+    <div class="container_search">
+        <input type="text" id="searchInput" placeholder="Digite sua pesquisa...">
+        <button onkeypress="search()" onclick="search()">&#128269;</button>
+        <button onclick="clearHighlights()">🧹</button>
+         <div class="container_areas">
             <div>
                 <h2>Desenvolvimento de software</h2>
                     <p>
@@ -99,8 +56,7 @@
                             <p>
                                 Os salários podem variar muito dependendo da região e da experiência. Um desenvolvedor júnior pode ganhar entre R$ 3.000 a R$ 6.000 por mês, enquanto um desenvolvedor sênior pode ganhar entre R$ 8.000 a R$ 15.000 por mês.
                             </p>
-            </div>
-                    
+            </div>         
             <div>
                 <h2>Desenvolvimento Web</h2>
                     <p>
@@ -122,7 +78,6 @@
                          </p>
                     <br>
             </div>
-
             <div>
                 <h2>Infraestrutura de TI</h2>
                     <p>
@@ -189,9 +144,7 @@
                             <p>
                                 Os salários podem variar consideravelmente. Um analista de dados pode ganhar entre R$ 3.000 a R$ 8.000 por mês, enquanto um cientista de dados pode ganhar entre R$ 8.000 a R$ 20.000 por mês.
                             </p>
-            </div>
-
-            
+            </div>  
             <div>
                 <h2>Suporte Técnico</h2>
                     <p>
@@ -214,7 +167,6 @@
                                 Os salários podem variar dependendo da experiência e do porte da empresa. Um técnico de suporte júnior pode ganhar entre R$ 2.000 a R$ 4.000 por mês, enquanto um analista de suporte sênior pode ganhar entre R$ 5.000 a R$ 8.000 por mês.
                             </p>
             </div>
-
             <div>
                 <h2>Gestão de Projetos de T.I.</h2>
                     <p>
@@ -237,8 +189,6 @@
                                 Os salários podem variar consideravelmente. Um gerente de projetos júnior pode ganhar entre R$ 4.000 a R$ 8.000 por mês, enquanto um gerente de projetos sênior pode ganhar entre R$ 10.000 a R$ 20.000 por mês.
                             </p>
             </div>
-
-
             <div>
                 <h2>Arquitetura de Sistemas</h2>
                     <p>
@@ -259,9 +209,7 @@
                             <p>
                                 Os salários variam significativamente. Um arquiteto de sistemas júnior pode ganhar entre R$ 5.000 a R$ 10.000 por mês, enquanto um arquiteto de sistemas sênior pode ganhar entre R$ 12.000 a R$ 25.000 por mês.
                             </p>
-            </div>
-
-            
+            </div> 
             <div>
                 <h2>Business Intelligence (BI) e Análise de Dados</h2>
                     <p>
@@ -328,16 +276,11 @@
                                 Os salários variam dependendo do nível de responsabilidade e experiência. Um analista de ITSM júnior pode ganhar entre R$ 3.000 a R$ 6.000 por mês, enquanto um gerente de serviços de T.I. sênior pode ganhar entre R$ 10.000 a R$ 20.000 por mês.
                             </p>
             </div>
-
          </div>
-
-
 </main>
-
 <footer>
     <div class="footer-content">
         <p>Entre em contato com nosso Email: <a href="mailto:Tryage@proton.me">Tryage@proton.me</a></p>
-        <h3></h3>
 
         <div class="pessoa">
             <h4>Carlos Pinheiro</h4>
@@ -356,11 +299,49 @@
             <p><a href="https://github.com/RodrigoGalvao9"><img src="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt=""></a></p>
             <p><a href="https://www.linkedin.com/in/rodrigo-galv%C3%A3o-a9188a20b/"><img src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt=""></a></a></p>    
     </div>
-    </div>
 
     <div id="especial">Tryage@proton.me</div>
 </footer>
+    <style>
+        .destaque {
+            background-color: rgb(245, 245, 94);
+        }
+    </style> 
+    <script>
+        function search() {
+            const termoPesquisa = document.getElementById('searchInput').value.toLowerCase().trim();
+            if (termoPesquisa === "") {
+                alert("Por favor, insira um termo de pesquisa.");
+                return;
+            }
 
+            const conteudo = document.getElementById('conteudo');
+            const conteudoHTML = conteudo.innerHTML;
 
+            // Cria uma expressão regular para buscar o termo de pesquisa no conteúdo da página
+            const regex = new RegExp(termoPesquisa, 'gi');
+            const resultados = conteudoHTML.match(regex);
+
+            if (resultados !== null) {
+                // Adiciona a classe 'destaque' às partes do texto que contêm o termo de pesquisa
+                const conteudoDestacado = conteudoHTML.replace(regex, `<span class="destaque">${termoPesquisa}</span>`);
+                conteudo.innerHTML = conteudoDestacado;
+
+                // Encontra o primeiro elemento destacado e rola a página até ele
+                const primeiroDestaque = document.querySelector('.destaque');
+                primeiroDestaque.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                alert('Termo de pesquisa não encontrado.');
+            }
+        }
+
+        function clearHighlights() {
+            // Remove a classe 'destaque' de todos os elementos
+            const elementosDestaque = document.querySelectorAll('.destaque');
+            elementosDestaque.forEach(elemento => {
+                elemento.outerHTML = elemento.innerHTML; // Remove a tag <span> mantendo o texto
+            });
+        }
+    </script>
 </body>
 </html>
