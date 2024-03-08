@@ -6,6 +6,10 @@
   padding: 0px;
 }
 
+header nav {
+  background-color: black;
+  color: #FEFBF6;
+}
 header nav .logo {
   font-family: "Times New Roman", Times, serif;
   font-size: 36px;
@@ -39,15 +43,15 @@ header nav ul li a {
 main {
   max-width: 1600px;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 25px;
   font-size: 1.5em;
 }
 main ul {
-  margin-top: 20px;
+  margin-top: 45px;
   margin: 20px auto 10px auto;
   max-width: 1200px;
 }
-main ul li {
+main li {
   margin-top: 15px;
   list-style: none;
   background-color: rgb(118, 118, 255);
@@ -55,15 +59,18 @@ main ul li {
   color: whitesmoke;
   border-radius: 10px;
 }
-main ul li h1 {
+main li :hover {
+  cursor: pointer;
+}
+main li :hover h1 {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
-main ul li p {
+main li :hover p {
   font-size: 20px;
   margin-bottom: 10px;
 }
-main ul li iframe {
+main li :hover iframe {
   min-width: 150px;
   min-height: 150px;
   margin: auto;
@@ -71,13 +78,15 @@ main ul li iframe {
 
 footer {
   text-align: justify;
-  background-color: rgba(128, 128, 128, 0.61);
+  background-color: rgba(148, 177, 255, 0.61);
   padding-top: 10px;
-  height: 45vh;
+  height: 20vh;
+  margin-top: 80px;
 }
 footer .pessoa {
-  display: block;
-  margin-right: 10px;
+  display: inline-block;
+  margin-right: 26%;
+  margin-left: 21px;
 }
 footer .pessoa h4 {
   font-weight: bold;
@@ -91,7 +100,7 @@ footer .pessoa img {
 
 #especial {
   margin-top: 50px;
-  background-color: rgba(255, 255, 255, 0.425);
+  background-color: rgba(255, 255, 255, 0.24);
   text-align: center;
   font-style: italic;
 }

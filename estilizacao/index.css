@@ -139,17 +139,18 @@ main .main_content .main_image_text p {
 
 .logo:hover {
   color: rgba(7, 15, 43, 0.7803921569);
-}/*# sourceMappingURL=index.css.map */
+}
 
 footer {
   text-align: justify;
-  background-color: rgba(128, 128, 128, 0.61);
+  background-color: rgba(148, 177, 255, 0.61);
   padding-top: 10px;
-  height: 45vh;
+  height: 20vh;
 }
 footer .pessoa {
-  display: block;
-  margin-right: 10px;
+  display: inline-block;
+  margin-right: 26%;
+  margin-left: 21px;
 }
 footer .pessoa h4 {
   font-weight: bold;
@@ -163,7 +164,7 @@ footer .pessoa img {
 
 #especial {
   margin-top: 50px;
-  background-color: rgba(255, 255, 255, 0.425);
+  background-color: rgba(255, 255, 255, 0.24);
   text-align: center;
   font-style: italic;
-}
+}/*# sourceMappingURL=index.css.map */

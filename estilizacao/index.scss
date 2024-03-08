@@ -152,3 +152,33 @@ main{
 .logo:hover{
     color: #070f2bc7;
 }
+
+footer{
+    text-align: justify;
+    background-color: rgba(148, 177, 255, 0.61);
+    padding-top: 10px;
+    height: 20vh;
+    .pessoa{
+        display: inline-block;
+        margin-right: 26%;
+        margin-left: 21px;
+        
+        h4{
+            font-weight: bold;
+            
+        }
+        p{
+            display: inline-block;
+        }
+        img {
+            width: 30px; 
+        }
+    }
+}
+
+#especial{
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.24);
+    text-align: center;
+    font-style: italic;
+}
